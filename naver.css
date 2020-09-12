@@ -1,0 +1,436 @@
+*{  /* *=모든 태그 */
+    box-sizing : border-box; /* content-box=padding,border,content 크기를 따로, border-box=한번에 */
+}
+html {
+    margin : 0;
+    padding : 0;
+}
+body {
+    margin : 0;
+    padding : 0;
+}
+
+/* CSS = Cascading Style Sheet */
+.blind {                /* class선택시 . id 선택시 # */
+                        /* class는 여러번 사용 가능 id는 한 번 사용 가능 # */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.center-align{ /* 선택자(selector) = html태그를 선택하는 것, div만 생략 가능 */
+    /* 여러태그 선택시 ,div#id값 추가 */
+    margin : 0 auto; /* 가운데정렬 */
+    width: 1130px; /* 너비설정 */
+}
+
+.font{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.image{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_b46ce0.png);
+    background-size: 440px 410px;
+    background-repeat: no-repeat;
+}
+
+.bar{
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #e4e8eb;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header{    
+    border-bottom: 1px solid #e4e8eb;
+    height: 161px;
+    position: relative;
+}
+
+
+#header-top{
+    float : right;
+    position: relative;
+    right: -8px;
+    top: 11.5px;
+}
+
+#header-top a{
+    text-decoration: none;
+}
+
+#startpage-ico{
+    background-position: -382px -213px;
+    margin: -3px 0 0 3px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    top: 0.9px;
+    left: 5.5px;
+    position: relative;
+}
+
+#startpage-font{
+    float: left;
+    font-size: 11px;
+    color: #404040;
+    top: 1px;
+    left :6px;
+    position: relative;
+}
+
+#startpage :hover{
+    text-decoration: underline;
+}
+
+#junior-image {
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -333px -267px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+    position: relative;
+    left: -5px;
+}
+
+#junior :hover {
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -257px -296px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+}
+
+#happybean-image {
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -257px -308px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+    position: relative;
+    left: -5px;
+}
+
+#happybean :hover {
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -380px -199px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+
+#header-search{
+    height : 161px;
+    padding : 0 30px 0 30px;
+    width: 1190px;
+    left: -30px;
+    top: -1px;
+}
+
+#logo{
+    position: relative;
+    top: 17%;
+    left: -39px;
+    display: inline-block;
+}
+
+#header-search h1{
+    width: 222px;
+    height: 52px;
+    display: inline-block;
+    background-position: 0 -158px;
+    position: relative;
+}
+
+/* #header-search h1 span {
+    display: none;
+} */
+
+/* div#header-search > h1{  자식선택자 
+    width : 280px;
+    display : inline-block;  마진없앰 
+} */
+
+#header-search a {
+    text-decoration: none;
+}
+
+#header-search h2 {
+    display : none;
+}
+
+#header-search fieldset{
+    /* padding-top : 12px;
+    padding-bottom : 12px;
+    padding-left : 10px;
+    padding-right : 0px; */
+    padding : 12px 0 12px 10px; /* 시계방향 위 오 아 왼 */
+    width: 582px;
+    height: 52px;
+    display : inline-block;
+    /* border-top : 2px solid #03cf5d;
+    border-bottom : 2px solid #03cf5d;
+    border-left : 2px solid #03cf5d;
+    border-right : 2px solid #03cf5d; */
+    border : 2px solid #03cf5d; /* hex */
+    position: relative; /* 검색창에 버튼 붙힐때 사용 */
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    top: -6px;
+    left: -20px;
+}
+
+#header-search fieldset input {
+    width: 444px;
+    height: 24px;
+    padding: 13px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+
+#header-search fieldset button {
+    width: 57px;
+    height: 56px;
+    border : none;
+    padding : none;
+    background : #03cf5d;
+    position: absolute;
+    right: -3px;
+    top: -2px;
+    cursor: pointer;
+}
+
+#search-image {
+    width : 23px;
+    height : 22px;
+    background-position: -154px -386px;
+    display : inline-block;
+    vertical-align: top;
+    /* 세로 가운데 정렬 하는 법
+    position: relative;
+    top : 50%; =현재 위치에서 50%만큼 내린 후
+    transform: translateY(-50%); = 내린 위치에서 50%다시 올림
+     */
+}
+
+nav{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    position: relative;
+    height: 52px;
+}
+
+#nav-total{
+    overflow: hidden;
+    position: relative;
+    padding: 11px 220px 11px 0;
+}
+
+nav ul{
+    margin : 0;
+    padding : 0 30px 0 30px;
+    list-style: none;
+    display: inline-block;
+}
+
+#fixed-list {
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+#mail-ico{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -178px -386px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+    float: left ;
+}
+
+#TV-ico {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -256px -212px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+    float: left;
+}
+
+.fixed-list-font {
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: #03c75a;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#fixed-list li{
+    margin-left: 12.5px;
+}
+
+#nav-total #fixed-list #no-margin { 
+    margin-left: 0;
+}
+
+.favorite-list-font {
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#favorite-list{
+    padding: 0;
+    margin-left :18px;
+    position: relative;
+    left: -6px;
+}
+
+#favorite-list li {
+    margin-left: 12.5px;
+}
+
+#nav-total #favorite-list #no-margin2 { 
+    margin-left: 0;
+}
+/* nav li span:first-child {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    display: inline-block;
+    margin-left : 14px;
+}
+
+nav li:first-child span:first-child {
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left : 0px;  우선순위는 기본적으로 아래에 나올수록 높다,!important > inline > id > attribute, class > tag 순으로 높다 
+}
+
+nav li:nth-child(2) span:first-child {
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+    width: 26px;
+    background-position: -279px -208px;
+}
+
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+    width: 26px;
+    background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child {
+    width: 26px;
+    background-position: -72px -259px;
+}
+
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
+} */
+
+
+/* 
+display : block; = 라인 100% 다 차지
+display : inline-block; = 차지하는 넓이 높이 크기 지정 가능
+display : inline; = 콘텐츠 크기만 차지 -span 
+*/
+/*
+position : static; = default
+position : relative; = static 위치에서 상대적인 위치로 변경 top,right
+position : absolute; = 화면에 기반해서 위치, 컨테이닝 블록 = 속성값이 static이 아닌 가장 가까운 조상의 내부 여백 영역
+position : fixed; = 
+*/
+/*
+#header-center h1 { 자손선택자
+}
+*/

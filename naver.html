@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+    <head> <!-- 문서에 대한 부가적인 정보 -->
+        <meta charset="utf-8" />
+        <meta />
+        <title>Naver</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?1" />
+        <!-- favicon(패비콘)=타이틀 옆 아이콘 ./=현재폴더 /=프로젝트의 최상위폴더 -->
+        <link rel="stylesheet" href="./naver.css"> <!-- css 지정 --> 
+    </head>
+    <body> <!-- 화면 -->
+        <div id="header"><!-- <div id="header"> -->
+            <div class="center-align">
+            <!--<div style="margin : 0 auto; width: 1130px;">--><!--가운데 정렬용 div-->
+                <!-- css형식 = 속성명 : 속성값 ; -->
+                <!-- 인라인 스타일 =css파일 사용 안 하는 것 -->
+                <div id="header-top">
+                    <a href="https://help.naver.com/support/welcomePage/guide.help">
+                        <span id="startpage">
+                            <span class ="image" id="startpage-ico"></span>
+                            <span class ="font" id="startpage-font">
+                                네이버를 시작페이지로
+                            </span>
+                        </span>
+                    </a>
+                    <i class="bar"></i> <!--span = diaplay : inline-->
+                    <a href="https://jr.naver.com">
+                        <span id="junior">
+                            <span class ="image" id="junior-image"></span>
+                            <span class="blind">
+                                쥬니어네이버
+                            </span>
+                        </span>
+                    </a>
+                    <a href="https://happybean.naver.com">
+                        <span id="happybean">
+                            <span class = "image" id="happybean-image"></span>
+                            <span class="blind">
+                                해피빈
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div id="header-search">
+                    <div id="logo">
+                        <a href="https://www.naver.com">
+                            <h1 class="image">
+                                <span class="blind">네이버</span>
+                                <!-- 부가정보 = attribute ex)lang~, href~, rel~ 등 -->
+                            </h1>
+                        </a> 
+                    </div>
+                    <h2 class = "blind">검색창</h2> 
+                    <fieldset> <!-- 테두리 사각형-->
+                        <legend class = "blind">검색</legend> <!-- 사각형 설명-->
+                        <input class="font" />
+                        <button>
+                            <span class="blind">검색</span>
+                            <span id="search-image" class ="image"></span>
+                        </button>
+                        <!-- <input type="checkbox" />
+                        <input type="checkbox" />
+                        <input type="radio" name ="group" />
+                        <input type="radio" name ="group"/>
+                        <textarea></textarea> -->
+                    </fieldset>
+                </div>
+            </div>
+        </div><!--</div>-->
+        <nav><!-- <div id="nav"> -->
+            <div class="center-align">
+                <div id="nav-total">
+                    <ul id="fixed-list"> <!-- unordered list(정렬되지 않은 리스트)-->
+                        <li id="no-margin"><a href ="https://mail.naver.com/"><span class="image" id="mail-ico"></span><span class ="fixed-list-font">메일</span></a></li> <!-- list item-->
+                        <li><a href ="https://section.cafe.naver.com/"><span></span><span class ="fixed-list-font">카페</span></a></li> <!-- list item-->
+                        <li><a href ="https://section.blog.naver.com/"><span></span><span class ="fixed-list-font">블로그</span></a></li> <!-- list item-->
+                        <li><a href ="https://kin.naver.com/"><span></span><span class ="fixed-list-font">지식iN</span></a></li> <!-- list item-->
+                        <li><a href ="https://shopping.naver.com/"><span></span><span class ="fixed-list-font">쇼핑</span></a></li> <!-- list item-->
+                        <li><a href ="https://order.pay.naver.com/home"><span></span><span class ="fixed-list-font">Pay</span></a></li> <!-- list item-->
+                        <li><a href ="https://tv.naver.com/"><span></span><span class="image" id="TV-ico"></span><span class ="fixed-list-font">TV</span></a></li> <!-- list item-->
+                    </ul>
+                    <ul id="favorite-list">
+                        <li id="no-margin2"><a href =""><span></span><span class ="favorite-list-font">사전</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">뉴스</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">증권</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">부동산</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">지도</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">영화</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">VIBE</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">책</span></a></li> <!-- list item-->
+                        <li><a href =""><span></span><span class ="favorite-list-font">웹툰</span></a></li> <!-- list item-->
+                    </ul>
+                </div>
+            </div>
+            <!-- <ol> =ordered list(숫자순)
+                <li></li>
+            </ol> -->
+        </nav><!-- </div> -->
+        <main><!-- <div id="main"> -->
+            <h2>실시간 검색어</h2>
+            <h3>연합뉴스</h3>
+                <ol>
+                    <li>속보!!</li>
+                    <li>충격!!</li>
+                    <li>비상</li>
+                </ol>
+            <h3>언론사 목록</h3>
+                <ul>
+                    <li><img src="./신문사/프레시안.png" alt="프레시안" title="프레시안"/></li>
+                    <li><img src="./신문사/마이데일리.png" alt="마이데일리" title="마이데일리" /></li>
+                    <li><img src="./신문사/국민일보.png" alt="국민일보" title="국민일보"/></li>
+                    <li><img src="./신문사/newsis.png" alt="newsis" title="newsis"/></li>
+                    <li><img src="./신문사/sbs.png" alt="sbs" title="sbs"/></li>
+                    <li><img src="./신문사/경향신문.png" alt="경향신문" title="경향신문"/></li>
+                    <li><img src="./신문사/동아일보.png" alt="동아일보" title="동아일보"/></li>
+                    <li><img src="./신문사/디지털타임스.png" alt="디지털타임스" title="디지털타임스"/></li>
+                    <li><img src="./신문사/매일경제.png" alt="매일경제" title="매일경제"/></li>
+                    <li><img src="./신문사/머니투데이.png" alt="머니투데이" title="머니투데이"/></li>
+                    <li><img src="./신문사/미디어오늘.png" alt="미디어오늘" title="미디어오늘"/></li>
+                    <li><img src="./신문사/서울경제.png" alt="서울경제" title="서울경제"/></li>
+                    <li><img src="./신문사/세계일보.png" alt="세계일보" title="세계일보"/></li>
+                    <li><img src="./신문사/아이뉴스.png" alt="아이뉴스" title="아이뉴스"/></li>
+                    <li><img src="./신문사/연합인포맥스.png" alt="연합인포맥스" title="연합인포맥스"/></li>
+                    <li><img src="./신문사/이데일리.png" alt="이데일리" title="이데일리"/></li>
+                    <li><img src="./신문사/전자신문.png" alt="전자신문" title="전자신문"/></li>
+                    <li><img src="./신문사/중앙일보.png" alt="중앙일보" title="중앙일보"/></li>
+                    <li><img src="./신문사/코리안타임즈.png" alt="코리안타임즈" title="코리안타임즈"/></li>
+                    <li><img src="./신문사/파이낸셜뉴스.png" alt="파이낸셜뉴스" title="파이낸셜뉴스"/></li>
+                    <li><img src="./신문사/한겨레.png" alt="한겨레" title="한겨레"/></li>
+                    <li><img src="./신문사/한국경제.png" alt="한국경제" title="한국경제"/></li>
+                    <li><img src="./신문사/한국일보.png" alt="한국일보" title="한국일보"/></li>
+                    <li><img src="./신문사/헤럴드경제.png" alt="헤럴드경제" title="헤럴드경제"/></li>
+                </ul>
+            <h3>로그인</h3>
+            <h3>뉴스</h3>
+            <h3>법률</h3>
+            <h3>쇼핑</h3>
+            <!-- h1~h6(heading) 중요도 순서, 글자크기 달라짐 -->
+        </main><!-- </div> -->
+        <footer>
+            <div>공지사항</div>
+            <div>Creators</div>
+            <div>회사소개</div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+<!--
+<parent>
+    <children>
+        <grandchildren>
+        </grandchildren>
+    </children>
+    <sibling>
+    </sibling>
+</parent>
+-->
