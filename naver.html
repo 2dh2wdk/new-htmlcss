@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./naver.css"> <!-- css 지정 --> 
     </head>
     <body> <!-- 화면 -->
-        <div id="header"><!-- <div id="header"> -->
+        <div id="header" class="full-width"><!-- <div id="header"> -->
             <div class="center-align">
             <!--<div style="margin : 0 auto; width: 1130px;">--><!--가운데 정렬용 div-->
                 <!-- css형식 = 속성명 : 속성값 ; -->
@@ -54,6 +54,10 @@
                     <fieldset> <!-- 테두리 사각형-->
                         <legend class = "blind">검색</legend> <!-- 사각형 설명-->
                         <input class="font" />
+                        <div>
+                            <div class="image" id="keyboard"></div>
+                            <div class="image" id="under-arrow"></div>
+                        </div>
                         <button>
                             <span class="blind">검색</span>
                             <span id="search-image" class ="image"></span>
@@ -67,7 +71,7 @@
                 </div>
             </div>
         </div><!--</div>-->
-        <nav><!-- <div id="nav"> -->
+        <nav class="full-width"><!-- <div id="nav"> -->
             <div class="center-align">
                 <div id="nav-total">
                     <ul id="fixed-list"> <!-- unordered list(정렬되지 않은 리스트)-->
@@ -80,24 +84,30 @@
                         <li><a href ="https://tv.naver.com/"><span></span><span class="image" id="TV-ico"></span><span class ="fixed-list-font">TV</span></a></li> <!-- list item-->
                     </ul>
                     <ul id="favorite-list">
-                        <li id="no-margin2"><a href =""><span></span><span class ="favorite-list-font">사전</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">뉴스</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">증권</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">부동산</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">지도</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">영화</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">VIBE</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">책</span></a></li> <!-- list item-->
-                        <li><a href =""><span></span><span class ="favorite-list-font">웹툰</span></a></li> <!-- list item-->
+                        <li id="no-margin2"><a href ="https://dict.naver.com/"><span></span><span class ="favorite-list-font">사전</span></a></li> <!-- list item-->
+                        <li><a href ="https://news.naver.com/"><span></span><span class ="favorite-list-font">뉴스</span></a></li> <!-- list item-->
+                        <li><a href ="https://finance.naver.com/"><span></span><span class ="favorite-list-font">증권</span></a></li> <!-- list item-->
+                        <li><a href ="https://land.naver.com/"><span></span><span class ="favorite-list-font">부동산</span></a></li> <!-- list item-->
+                        <li><a href ="https://map.naver.com/"><span></span><span class ="favorite-list-font">지도</span></a></li> <!-- list item-->
+                        <li><a href ="https://movie.naver.com/"><span></span><span class ="favorite-list-font">영화</span></a></li> <!-- list item-->
+                        <li><a href ="https://vibe.naver.com/"><span></span><span class ="favorite-list-font">VIBE</span></a></li> <!-- list item-->
+                        <li><a href ="https://book.naver.com/"><span></span><span class ="favorite-list-font">책</span></a></li> <!-- list item-->
+                        <li><a href ="https://comic.naver.com/"><span></span><span class ="favorite-list-font">웹툰</span></a></li> <!-- list item-->
                     </ul>
+                    <div id="more">더보기<div class= "image" id="more-ico"></div></div>
+                    <div id="search-rank">
+                        <h2 class="blind">실시간 검색어</h2>
+                        <span id="rank-number" class="font">1</span>
+                        <span class="rank-font">이도현</span>
+                        <span class="image" id="rank-ico"></span>
+                    </div>      
                 </div>
             </div>
             <!-- <ol> =ordered list(숫자순)
                 <li></li>
-            </ol> -->
+            </ol> -->    
         </nav><!-- </div> -->
         <main><!-- <div id="main"> -->
-            <h2>실시간 검색어</h2>
             <h3>연합뉴스</h3>
                 <ol>
                     <li>속보!!</li>
