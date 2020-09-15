@@ -295,10 +295,12 @@ nav{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
     position: relative;
     height: 52px;
+    min-width: 1190px;
+    overflow: visible;
 }
 
 #nav-total{
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     padding: 11px 220px 11px 0;
 }
@@ -312,9 +314,10 @@ nav ul{
 
 #fixed-list {
     padding: 0;
+    display: inline-block;
 }
 
-nav li{
+#fixed-list li{
     display: inline-block;
 }
 
@@ -373,10 +376,12 @@ nav li{
     margin-left :18px;
     position: relative;
     left: -6px;
+    display: inline-block;
 }
 
 #favorite-list li {
     margin-left: 12.5px;
+    display: inline-block;
 }
 
 #nav-total #favorite-list #no-margin2 { 
@@ -493,23 +498,48 @@ position : fixed; =
     line-height: 16px;
     color: #202020;
     font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-
+    display: inline-block;
+    position: relative;
+    top: 2px;
 }
 #search-rank{
     position: absolute;
     top: 11px;
-    right: -1px;
-    overflow: hidden;
+    right: 0px;
+    /* overflow: hidden; */
     width: 210px;
     height: 30px;
 }
-#rank-number {
+
+.rank-number {
     float: left;
     margin: 2px 9px 0 0;
     font-size: 15px;
     line-height: 27px;
     color: #03c75a;
     font-weight: bold;
+}
+
+#search-rank ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 17px;
+    width: 332px;
+    height: 334px;
+    border: 1px solid #aaaaaa;
+    background-color: white;
+    position: absolute;
+    top: -12px;
+    right: 0;
+}
+
+#rank-list li{
+    line-height: 30px;
+}
+
+#search-rank:hover ul {
+    display: inline-block;
 }
 
 #rank-ico{
@@ -536,27 +566,37 @@ main{
     background-color: #555;
     margin-right: 8px;
     margin-bottom: 8px;
+    float: left;
 }
 
 #main-login{
     display: inline-block;
     padding: 16px 16px 12px 17px;
-
     background-color: white;
     height: 135px;
-    width: 332px;
+    width: 333px;
     vertical-align: top;
     margin-bottom: 8px;
+    float: left;
+}
+
+#main-second-block{
+    margin-bottom: 8px;
+    vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #main-second-block .inline-block:first-child{
     width: 740px;
     margin-right: 8px;
+    float : left;
 }
 
 #main-second-block .inline-block:last-child{
     width: 332px;
     vertical-align: top;
+    float: left;
 }
 
 #main-ytn{
@@ -564,9 +604,10 @@ main{
     width: 740px;
     height: 46px;
     background-color: white;
-    vertical-align: top;
     margin-right: 8px;
     margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
 }
 
 #main-ytn h3, 
@@ -585,8 +626,9 @@ main{
     width: 740px;
     height: 246px;
     margin-right: 8px;
-    margin-bottom: 8px;
     background-color: white;
+    vertical-align: top;
+    float: left;
 }
 
 #main-newsstand ul {
@@ -598,7 +640,7 @@ main{
 
 #main-newsstand li{
     float: left;
-    width: 123px;
+    width: calc(100% / 6);
     height: 67px;
     border-right: 1px solid #f1f3f6;
     border-bottom: 1px solid #f1f3f6;
@@ -614,36 +656,49 @@ main{
 
 #main-weather{
     display: inline-block;
-    width: 332px;
+    width: 333px;
     height: 142px;
     background-color: white;
     vertical-align: top;
     margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
 }
 
 #main-secondad{
     display: inline-block;
-    width: 332px;
+    width: 333px;
     height: 150px;
     background-color: #555;
-    margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
 }
+
 
 #main-category{
     display: inline-block;
     width: 740px;
-    height: 837px;
+    height: 900px;
     background-color: white;
     margin-right: 8px;
     margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
 }
 
 #main-shopping{
     display: inline-block;
-    width: 332px;
-    height: 837px;
+    width: 333px;
+    height: 900px;
     background-color: white;
     margin-bottom: 8px;
+    vertical-align: top;
+    float: left;
+}
+
+#main-shopping iframe{
+    width: 100%;
+    height: 100%;
 }
 
 #main-event{
@@ -653,14 +708,16 @@ main{
     background-color: white;
     vertical-align: top;
     margin-right: 8px;
+    float: left;
 }
 
 #main-thirdad{
     display: inline-block;
-    width: 332px;
+    width: 333px;
     height: 130px;
     background-color: #555;
     vertical-align: top;
+    float: left;
 }
 /* 마진상쇄 없애는법
     overflow:auto; or overflow:hidden;
