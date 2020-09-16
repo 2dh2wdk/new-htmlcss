@@ -494,24 +494,38 @@ position : fixed; =
 */
 
 #rank-total{
-    /* display: none; */
-    min-height: 332px;
-    width: 330px;
+    display: none;
+    min-height: 335px;
+    width: 333px;
     border: 1px solid #bec8d8;
     background: #fff;
     position: relative;
-    top: -32px;
+    top: -42px;
     left: -100px;
 }
 
+#rank-target{
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    margin: 0;
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    letter-spacing: .3px;
+}
+
 .rank-font{
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 12px;
     color: #202020;
-    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-    display: inline-block;
+    font-family: Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif;
+    display: block;
     position: relative;
-    top: 2px;
+    width: 193px;
+    overflow: hidden;
+    top: 3px;
+    left: 7px;
 }
 #search-rank{
     position: absolute;
@@ -522,13 +536,36 @@ position : fixed; =
     height: 30px;
 }
 
-.rank-number {
+#search-rank-font{
+    font-size: 13px;
+    line-height: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 13px
+}
+
+#search-rank-number {
+    font-weight: bold;
     float: left;
     margin: 2px 9px 0 0;
     font-size: 15px;
     line-height: 27px;
     color: #03c75a;
-    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.rank-number {
+    float: left;
+    margin-top: -10px;
+    font-size: 14px;
+    font-family: Arial,Sans-serif;
+    line-height: 18px;
+    color: #000;
+    position: absolute;
+    top: 60%;
+    left: 6px;
+    text-align: center;
+    vertical-align: top;
+    min-width: 17px;
 }
 #rank-select {
     overflow: hidden;
@@ -573,14 +610,27 @@ position : fixed; =
 #rank-list li{
     position: relative;
     padding: 4px 0 0 21px;
-    height: 18px;
-    font-size: 12px;
-    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    height: 22px;
+}
+
+.graph{
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    padding: 5px;
+}
+#graph-img{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+    background-position: -200px -58px;
+    display: block;
+    width: 12px;
+    height: 10px;
 }
 
 #search-rank:hover #rank-total {
     display: inline-block;
-    top: -40px;
+    top: -42px;
 }
 
 #rank-ico{
@@ -602,9 +652,76 @@ position : fixed; =
     font-size: 14px;
     line-height: 17px;
     margin: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
+#rank-info {
+    padding: 4px 15px;
+}
 
+#rank-info a {
+    text-decoration: none;
+}
+
+#rank-info a:nth-child(2) {
+    position: relative;
+    left: 5px;
+    color: #666;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-size: 12px;
+}
+
+#rank-info p{
+    color: rgb(136, 136, 136);
+    font-size: 11px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif;
+    vertical-align: top;
+}
+
+#rank-help{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+    background-position: -200px -32px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    padding: 4px;
+    position: relative;
+    top: 4px;
+    right: -5px;
+}
+
+#rank-datarab{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+    background-position: -68px -157px;
+    display: inline-block;
+    overflow: hidden;
+    width: 58px;
+    height: 10px;
+    margin-right: 4px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#rank-trakingico{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+    background-position: -200px -115px;
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 7px;
+    vertical-align: 1px;
+    position: relative;
+    left: -2px;
+}
 
 main{
     overflow: hidden;
