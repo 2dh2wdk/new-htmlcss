@@ -2,11 +2,12 @@
 <html lang="ko">
     <head> <!-- 문서에 대한 부가적인 정보 -->
         <meta charset="utf-8" />
-        <meta />
+        <!-- <meta /> -->
         <title>Naver</title>
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?1" />
         <!-- favicon(패비콘)=타이틀 옆 아이콘 ./=현재폴더 /=프로젝트의 최상위폴더 -->
         <link rel="stylesheet" href="./naver.css"> <!-- css 지정 --> 
+        <!-- <link rel="stylesheet" gref="./webfont.css"> -->
     </head>
     <body> <!-- 화면 -->
         <div id="header" class="full-width"><!-- <div id="header"> -->
@@ -51,23 +52,25 @@
                         </a> 
                     </div>
                     <h2 class = "blind">검색창</h2> 
-                    <fieldset> <!-- 테두리 사각형-->
-                        <legend class = "blind">검색</legend> <!-- 사각형 설명-->
-                        <input class="font" />
-                        <div>
-                            <div class="image" id="keyboard"></div>
-                            <div class="image" id="under-arrow"></div>
-                        </div>
-                        <button>
-                            <span class="blind">검색</span>
-                            <span id="search-image" class ="image"></span>
-                        </button>
-                        <!-- <input type="checkbox" />
-                        <input type="checkbox" />
-                        <input type="radio" name ="group" />
-                        <input type="radio" name ="group"/>
-                        <textarea></textarea> -->
-                    </fieldset>
+                    <form class="inline-block" action="https://search.naver.com/search.naver">
+                        <fieldset> <!-- 테두리 사각형-->
+                            <legend class = "blind">검색</legend> <!-- 사각형 설명-->
+                            <input class="font" />
+                            <div>
+                                <div class="image" id="keyboard"></div>
+                                <div class="image" id="under-arrow"></div>
+                            </div>
+                            <button type="submit">
+                                <span class="blind">검색</span>
+                                <span id="search-image" class ="image"></span>
+                            </button>
+                            <!-- <input type="checkbox" />
+                            <input type="checkbox" />
+                            <input type="radio" name ="group" />
+                            <input type="radio" name ="group"/>
+                            <textarea></textarea> -->
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div><!--</div>-->
@@ -115,83 +118,83 @@
                             </div>
                             <ul id="rank-list">
                                 <li>
-                                        <span class="rank-number" class="font">1</span>
+                                        <span class="rank-number font">1</span>
                                         <span class="rank-font">이도현</span>
                                     <a class="graph">
                                         <span class="blind">데이터랩 그래프 보기</span>
-                                        <span id="graph-img"></span>
+                                        <span class="graph-img"></span>
                                     </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">2</span>
+                                        <span class="rank-number font">2</span>
                                         <span class="rank-font">이도현</span>
                                     <a class="graph">
                                         <span class="blind">데이터랩 그래프 보기</span>
-                                        <span id="graph-img"></span>
+                                        <span class="graph-img"></span>
                                     </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">3</span>
+                                        <span class="rank-number font">3</span>
                                         <span class="rank-font">이도현</span>
                                     <a class="graph">
                                         <span class="blind">데이터랩 그래프 보기</span>
-                                        <span id="graph-img"></span>
+                                        <span class="graph-img"></span>
                                     </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">4</span>
+                                        <span class="rank-number font">4</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">5</span>
+                                        <span class="rank-number font">5</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">6</span>
+                                        <span class="rank-number font">6</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">7</span>
+                                        <span class="rank-number font">7</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">8</span>
+                                        <span class="rank-number font">8</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">9</span>
+                                        <span class="rank-number font">9</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                                 <li>
-                                        <span class="rank-number" class="font">10</span>
+                                        <span class="rank-number font">10</span>
                                         <span class="rank-font">이도현</span>
                                         <a class="graph">
                                             <span class="blind">데이터랩 그래프 보기</span>
-                                            <span id="graph-img"></span>
+                                            <span class="graph-img"></span>
                                         </a>
                                 </li>
                             </ul>  
@@ -218,22 +221,47 @@
         <main class="full-width">
             <div class="center-align"><!-- <div id="main"> -->
             <div id="main-first-block">
-                <div id="main-ad">
-                    광고
-                </div>
-                <div id="main-login">
-                    <h3>로그인</h3>
-                </div>
+                <section id="main-ad">
+                    <h3 class="blind">광고</h3>
+                    <a href="https://siape.veta.naver.com/fxclick?eu=EU10041889&calp=1&oj=A4YjrwVVtw%2FgTS52zHx02bgICaLZQh5qnBkiGK%2FB%2B6bs9C08tzpvCc7Q%2FUY1Mp2xbaJ2jsmcgDF0Awll8fPQgmtVbvOWOHXsmcFxzdg6VylQrXZhXJUHFg&ac=8153868&src=4581360&br=3252084&evtcd=P901&x_ti=1308&tb=&oid=&sid1=&sid2=&rk=50e70c98be31b5f59ec1a670708405dc&eltts=LTwQKkZH%2F7RqMAWMGwk3yA%3D%3D&lu=&brs=Y&"
+                    id="main-ad-banner">
+                        <img src="https://ssl.pstatic.net/tveta/libs/1303/1303668/9a78ce88bdd6c332b20f_20200911172619010.jpg" style="width: 740px; height: 135px;" alt="광고">
+                        
+                    </a>
+                </section>
+                <section id="main-login">
+                    <h3 class="blind">로그인</h3>
+                    <div id="login-wrapper">
+                        <p class="font">네이버를 더 안전하고 편리하게 이용하세요.</p>
+                        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=http%3A%2F%2Fwww.naver.com" class="link-login">
+                            <div id="login-ico"></div>
+                            <div class="font" id="login-font">로그인</div>
+                        </a>
+                        <div id="login-sub">
+                            <div id="find-account" class=".font">
+                                <div class="image" id="lookbox"></div>
+                                <a href="https://nid.naver.com/user/help.nhn?todo=idinquiry" class="font" id="find-id">아이디</a>
+                                <a href="https://nid.naver.com/nidreminder.form" class="font" id="find-password"><span class="dot"></span>비밀번호 찾기</a>
+                            </div>
+                            <div id="signup-account">
+                                <a href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com">
+                                    <div id="signup-img" class="image"></div>
+                                    <div id="signup-text" class="font">회원가입</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div id="main-second-block">
                 <div class="inline-block">
-                    <div id="main-ytn">
+                    <section id="main-ytn" class="font">
                         <h3>연합뉴스</h3>
                         <ol>
                             <li>속보!!</li>
                         </ol>
-                    </div>
-                    <div id="main-newsstand">
+                    </section>
+                    <section id="main-newsstand" class="font">
                         <h3>뉴스스탠드</h3>
                         <ul>
                             <li><img src="./신문사/프레시안.png" alt="프레시안" title="프레시안"/></li>
@@ -255,29 +283,70 @@
                             <li><img src="./신문사/전자신문.png" alt="전자신문" title="전자신문"/></li>
                             <li><img src="./신문사/중앙일보.png" alt="중앙일보" title="중앙일보"/></li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
                 <div class="inline-block">
-                    <div id="main-weather">날씨</div>
-                    <div id="main-secondad"></div>
+                    <section id="main-weather">
+                        <h3 class="blind">날씨</h3>
+                    </section>
+                    <section id="main-secondad">
+                    <h3 class="blind">광고</h3>
+                    </section>
                 </div>
             </div>
             <div id="main-third-block">
-                <div id="main-category">
-                    <h3>주제별 보기</h3>
-                </div>
-                <div id="main-shopping">
-                    <iframe src="https://castbox.shopping.naver.com/shopbox/main.nhn?" 
-                    frameborder="0"
-                    scrolling="no">
+                <section id="main-category">
+                    <h3 class="blind">주제별 보기</h3>
+                    <div id="main-category-top">
+                        <button id="subject-all">
+                            <span id="subject-all-image" class="subject-image"></span>
+                            <span class="blind">주제별 보기</span>
+                        </button>
+                        <div id="subject-list">
+                            <div class="opacity left"></div>
+                            <ul>
+                                <li>리빙</li>
+                                <li>푸드</li>
+                                <li>스포츠</li>
+                                <li>자동차</li>
+                                <li>패션뷰티</li>
+                                <li>부모i</li>
+                                <li class="highlight">건강</li>
+                                <li>웹툰</li>
+                                <li>게임</li>
+                                <li>TV연예</li>
+                                <li>뮤직</li>
+                                <li>영화</li>
+                                <li>책</li>
+                                <li>문화</li>
+                            </ul>
+                            <div class="opacity right"></div>
+                        </div>
+                        <button id="subject-prev" class="subject-image">
+                            <span class="blind">이전 주제</span>
+                            <span id="subject-prev-image" class="subject-image"></span>
+                        </button>
+                        <button id="subject-next" class="subject-image">
+                            <span class="blind">다음 주제</span>
+                            <span id="subject-next-image" class="subject-image"></span>
+                        </button>
+                    </div>
+                </section>
+                    <section id="main-shopping">
+                        <h3 class="blind">광고</h3>
+                        <iframe src="https://castbox.shopping.naver.com/shoppingbox/main.nhn" 
+                    scrolling="no"
+                    allowfullscreen>
                     </iframe>
-                </div>
+                </section>
             </div>
             <div id="main-fourth-block">
-                <div id="main-event">
+                <section id="main-event">
                     <h3>이벤트</h3>
-                </div>
-                <div id="main-thirdad"></div>
+                </section>
+                <section id="main-thirdad">
+                    <h3 class="blind">광고</h3>
+                </section>
             </div>
             <!-- h1~h6(heading) 중요도 순서, 글자크기 달라짐 -->
         </div>
