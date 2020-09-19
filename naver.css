@@ -922,9 +922,95 @@ main{
     float: left;
 }
 
+#main-ytn #ytn-area{
+    position: relative;
+    padding: 15px 0 0 16px;
+    height: 29px;
+}
+
+#main-ytn #ytn-area a {
+    display: inline-block;
+    float: left;
+    margin-right: 12px;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 16px;
+}
+#main-ytn #ytn-ico{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 8px;
+    width: 5px;
+    height: 9px;
+    background-position: -256px -100px;
+    position: relative;
+    left: -4px;
+}
+
+#main-ytn #ytn-list{
+    float: left;
+    overflow: hidden;
+    margin-top: -2px;
+    width: 340px;
+    height: 20px;
+    text-align: left;
+    font-size: 12px;
+    font-family: Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
 #main-ytn h3, 
 #main-ytn ol {
     display: inline-block;
+}
+
+#main-ytn ol{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 12px;
+    font-family: Dotum, 돋움, Helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+#main-ytn ol li{
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 340px;
+    letter-spacing: -1px;
+}
+
+#ytn-tag {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    margin-top: -7px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#ytn-tag li{
+    float: left;
+    margin-right: 14px;
+    display: block;
+    height: 15px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -1px;
+}
+
+#ytn-tag li:first-child{
+    color: #00ab33;
 }
 
 #main-newsstand h3{
@@ -957,6 +1043,10 @@ main{
     border-right: 1px solid #f1f3f6;
     border-bottom: 1px solid #f1f3f6;
     text-align: center;
+}
+
+#main-newsstand li:nth-child(6), #main-newsstand li:nth-child(12), #main-newsstand li:nth-child(18){
+    border-right: none;
 }
 
 #main-newsstand li img{
@@ -1004,7 +1094,7 @@ main{
 }
 
 #subject-list{
-    width: 603px;
+    width: 602px;
     border-right: 1px solid #ebeef3;
     overflow: hidden;
     position: relative;
@@ -1099,6 +1189,10 @@ main{
     top: 0;
 }
 
+#subject-next{
+    border-right: none;
+}
+
 #main-category{
     display: inline-block;
     width: 740px;
@@ -1121,11 +1215,10 @@ main{
 }
 
 #main-shopping iframe{
-    width: 340px;
-    height: 900px;
+    width: 331px;
+    height: 898px;
     overflow: hidden;
     margin: 0;
-    border: 0;
     padding: 0;
     vertical-align: top;
     border: none;
