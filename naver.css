@@ -621,7 +621,7 @@ position : fixed; =
     padding: 5px;
 }
 #graph-img{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
     background-repeat: no-repeat;
     background-position: -200px -58px;
     display: block;
@@ -684,7 +684,7 @@ position : fixed; =
 }
 
 #rank-help{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
     background-repeat: no-repeat;
     background-position: -200px -32px;
     display: inline-block;
@@ -698,7 +698,7 @@ position : fixed; =
 }
 
 #rank-datarab{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
     background-repeat: no-repeat;
     background-position: -68px -157px;
     display: inline-block;
@@ -712,7 +712,7 @@ position : fixed; =
 }
 
 #rank-trakingico{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
     background-repeat: no-repeat;
     background-position: -200px -115px;
     display: inline-block;
@@ -937,11 +937,10 @@ main{
     letter-spacing: -1px;
     font-weight: 700;
     font-size: 14px;
-    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
     line-height: 16px;
 }
 #main-ytn #ytn-ico{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
     background-repeat: no-repeat;
     display: inline-block;
     margin-left: 8px;
@@ -1013,11 +1012,6 @@ main{
     color: #00ab33;
 }
 
-#main-newsstand h3{
-    height: 45px;
-    border-bottom: 1px solid #f1f3f6;
-    margin: 0;
-}
 
 #main-newsstand{
     display: inline-block;
@@ -1027,6 +1021,43 @@ main{
     background-color: white;
     vertical-align: top;
     float: left;
+}
+
+
+#main-newsstand #news-top{
+    height: 45px;
+    border-bottom: 1px solid #f1f3f6;
+    margin: 0;
+    position: relative;
+}
+
+#main-newsstand h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 0 0 16px;
+    margin: 0;
+}
+
+#main-newsstand h3 a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#main-newsstand #news-top #news-top-ico{
+    display: inline-block;
+    margin-left: 8px;
+    width: 5px;
+    height: 9px;
+    background-position: -256px -100px;
+    vertical-align: middle;
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-repeat: no-repeat;
 }
 
 #main-newsstand ul {
@@ -1056,15 +1087,255 @@ main{
     height: 20px;;
 }
 
+#main-newsstand #news-top #news-menu{
+    position: absolute;
+    top: 0;
+    left: 102px;
+    padding: 13px 0;
+    height: 44px;
+    width: 147px;
+}
+
+#main-newsstand #news-top #news-menu #news-menu-list span:first-child{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+}
+
+#main-newsstand #news-top #news-menu #news-menu-list span:last-child{
+    display: block;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.news-bar{
+    display: block;
+    margin: 2px 15px 0px;
+    width: 1px;
+    height: 15px;
+    background-color: rgb(235, 238, 243);
+    float: left;
+}
+
+#news-set{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 44px
+}
+
+.news-set-block{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+    height: 44px;
+}
+
+.news-set-back{
+    display: block;
+    margin-top: 13px;
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.news-set-block #news-set-large{
+    background-position: -228px -124px;
+}
+
+.news-set-block #news-set-all{
+    background-position: 0px -193px;
+}
+
+.news-set-block #news-set-setting{
+    background-position: -28px -193px;
+}
+
+#news-set-list #news-set-prev, #news-set-list #news-set-next{
+    border: 0;
+    border-left: 1px solid rgb(235, 238, 243);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 44px;
+    height: 43px;
+    background-color: white;
+    float: left;
+}
+
+#news-set-list #news-set-prev #news-set-prev-image{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 16px;
+    background-position: -254px -24px;
+    display: inline-block;
+}
+
+#news-set-list #news-set-next #news-set-next-image{
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 16px;
+    background-position: -102px -193px;
+    display: inline-block;
+}
+
 #main-timesquare{
     display: inline-block;
     width: 333px;
     height: 142px;
     background-color: white;
-    vertical-align: top;
     margin-bottom: 8px;
     vertical-align: top;
     float: left;
+}
+
+#main-timesquare-top{
+    position: relative;
+    padding-left: 15px;
+    height: 33px;
+    border-bottom: 1px solid rgb(235, 238, 243);
+}
+
+#main-timesquare-top #timesquare-top-info{
+    display: inline-block;
+    overflow: hidden;
+    padding: 9px 0px 7px;
+    max-width: 208px;
+    width: 208px;
+    height: 32px;
+} 
+#main-timesquare-top #timesquare-top-info a{
+    position: relative;
+    top: -4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.info-font{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.info-bar{
+    margin: 0px -1px 0px 4px;
+    color: rgb(227, 231, 238);
+    vertical-align: 4px;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+#info-menu{
+    display: inline;
+    max-width: 130px;
+    color: rgb(136, 136, 136);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    vertical-align: 4px;
+}
+
+#main-timesquare-top #timesquare-top-page{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 78px;
+    color: #888;
+    font-size: 12px;
+    font-family: Tahoma,sans-serif;
+    line-height: 14px;
+    text-align: left;
+}
+
+#main-timesquare-top #timesquare-top-page b{
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    float: left;
+}
+
+#main-timesquare-top #timesquare-top-page span:nth-child(2){
+    float: left;
+}
+#main-timesquare-top #timesquare-top-page span:last-child{
+    float: left;
+}
+
+#timesquare-top-bt {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#timesquare-top-prev, #timesquare-top-next{
+    border: 0;
+    display: block;
+    float: left;
+    padding: 11px 0;
+    width: 33px;
+    height: 32px;
+    border-left: 1px solid #ebeef3;
+    text-align: center;
+    background-color: white;
+}
+
+#timesquare-top-prev-image {
+    width: 6px;
+    height: 11px;
+    background-position: -433px -303px;
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2017/sp_timesquare_v170913a.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#timesquare-top-next-image {
+    width: 6px;
+    height: 11px;
+    background-position: -433px -324px;
+    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2017/sp_timesquare_v170913a.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#main-timesquare ul{
+    padding: 20px 16px 0px;
+    margin: 0;
+}
+
+#main-timesquare li{
+    list-style: none;
+}
+
+#main-timesquare .test{
+    padding-right: 9px;
+    color: #2565d0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
 #main-secondad{
@@ -1076,6 +1347,12 @@ main{
     float: left;
 }
 
+#main-secondad img{
+    width: 331px;
+    height: 148px;
+    border: 0;
+}
+
 #main-category-top{
     display: inline-block;
     width: 100%;
@@ -1084,7 +1361,7 @@ main{
 }
 
 .subject-image{
-    background-image: url(http://web.archive.org/web/20191001102208im_/https://s.pstatic.net/static/www/img/2018/sp_themecast_v180607.png);
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_themecast_v180607.png);
     background-repeat: no-repeat;
 }
 
@@ -1215,7 +1492,7 @@ main{
 }
 
 #main-shopping iframe{
-    width: 331px;
+    width: 330px;
     height: 898px;
     overflow: hidden;
     margin: 0;
