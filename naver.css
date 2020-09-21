@@ -1328,7 +1328,7 @@ main{
     list-style: none;
 }
 
-#main-timesquare .test{
+#main-timesquare .timesquare-list-font{
     padding-right: 9px;
     color: #2565d0;
     font-weight: 700;
@@ -1336,6 +1336,26 @@ main{
     line-height: 15px;
     text-decoration: none;
     font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#main-timesquare .timesquare-text-font{
+    color: #222;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    text-decoration: none;
+    display: inline;
+}
+
+.timesquare-bar{
+    margin-right: 5px;
+    margin-left: 4px;
+    color: #e3e7ee;
+    vertical-align: top;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: 1px;
 }
 
 #main-secondad{
