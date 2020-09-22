@@ -726,7 +726,7 @@ position : fixed; =
 
 main{
     overflow: hidden;
-    padding: 20px 30px;
+    padding: 8px 30px;
     background-color: #f7f9fa;
 }
 
@@ -894,7 +894,6 @@ main{
 
 #main-second-block{
     margin-bottom: 8px;
-    vertical-align: top;
     display: inline-block;
     vertical-align: top;
 }
@@ -1368,7 +1367,7 @@ main{
 }
 
 #main-secondad img{
-    width: 330px;
+    width: 331px;
     height: 147px;
     border: 0;
 }
@@ -1613,6 +1612,52 @@ main{
     font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
     display: block;
 
+}
+
+#notice{
+    position: relative;
+    border-bottom: 1px solid #f1f3f6;
+}
+
+#notice-area{
+    padding-top: 16px;
+    height: 45px;
+}
+
+.notice-font{
+    text-decoration: none;
+    color: #000;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#notice-text{
+    margin: 0;
+    float: left;
+    margin-right: 13px;
+    letter-spacing: -1px;
+    padding: 0px;
+}
+
+#notice-all{
+    position: absolute;
+    top: 16px;
+    right: 50%;
+    margin-right: -540px;
+}
+
+#creators{
+    position: relative;
+    width: 1130px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+#company{
+    height: 132px;
+    border-top: 1px solid #f1f3f6;
 }
 
 /* 마진상쇄 없애는법
