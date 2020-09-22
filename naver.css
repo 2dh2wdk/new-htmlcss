@@ -1558,13 +1558,13 @@ main{
     padding: 0;
 }
 
-#main-fourth-block #event-total #first-event .event-img{
+#main-fourth-block #event-total .event-img{
     position: relative;
     float: left;
     margin-right: 14px;
 }
 
-#main-fourth-block #event-total #first-event .event-img img{
+#main-fourth-block #event-total .event-img img{
     width: 166px;
     height: 88px;
     border: 0;
