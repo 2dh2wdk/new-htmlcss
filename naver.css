@@ -1368,8 +1368,8 @@ main{
 }
 
 #main-secondad img{
-    width: 331px;
-    height: 148px;
+    width: 330px;
+    height: 147px;
     border: 0;
 }
 
@@ -1539,6 +1539,82 @@ main{
     vertical-align: top;
     float: left;
 }
+
+#main-thirdad img{
+    height: 128px;
+    width: 331px;
+}
+
+#main-fourth-block #event-total{
+    position: relative;
+    padding: 20px 0 0 16px;
+    margin: 0;
+}
+
+#main-fourth-block #event-total #first-event, #main-fourth-block #event-total #second-event{
+    float: left;
+    width: 360px;
+    margin: 0;
+    padding: 0;
+}
+
+#main-fourth-block #event-total #first-event .event-img{
+    position: relative;
+    float: left;
+    margin-right: 14px;
+}
+
+#main-fourth-block #event-total #first-event .event-img img{
+    width: 166px;
+    height: 88px;
+    border: 0;
+}
+
+.event-text{
+    overflow: hidden;
+    padding-top: 5px;
+    padding-right: 24px;
+    vertical-align: top;
+    font-size: 12px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    display: inline-block;
+}
+
+
+.event-text span:first-child{
+    overflow: hidden;
+    color: #00ab33;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.event-text strong{
+    color: #888;
+    overflow: hidden;
+    padding-top: 4px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    display: block;
+
+}
+
+.event-text span:nth-child(3){
+    color: #888;
+    overflow: hidden;
+    padding-top: 7px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    display: block;
+
+}
+
 /* 마진상쇄 없애는법
     overflow:auto; or overflow:hidden;
     float : left; width : 100%;
