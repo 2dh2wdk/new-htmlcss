@@ -1671,6 +1671,7 @@ main{
     position: absolute;
     top: 23px;
     left: 0;
+    display: inline-block;
 }
 
 .ul-style{
@@ -1704,6 +1705,7 @@ main{
     text-decoration: none;
     color: #888;
     font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    margin-left: 9px;
 }
 
 .footer-bar{
@@ -1715,9 +1717,20 @@ main{
     vertical-align: -2px;
 }
 
-.ul-style li:nth-child(2){
-    margin-left: 9px;
+.ul-style a{
+    margin-left: 0px;
 }
+
+.footer-main-list{
+    overflow: hidden;
+    padding-top: 2px;
+    margin: 0;
+}
+
+#creators{
+    padding-top: 0;
+}
+
 #company{
     height: 132px;
     border-top: 1px solid #f1f3f6;
