@@ -1644,17 +1644,80 @@ main{
 #notice-all{
     position: absolute;
     top: 16px;
-    right: 50%;
+    right: 51.4%;
     margin-right: -540px;
 }
 
-#creators{
+#notice-all-ico{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 7px;
+    width: 5px;
+    height: 11px;
+    background-position: -200px -94px;
+    vertical-align: 5px;
+}
+
+#footer-main{
     position: relative;
     width: 1130px;
     height: 110px;
     margin: 0 auto;
+    min-width: 1130px;
 }
 
+#footer-main-area{
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
+
+.ul-style{
+    position: relative;
+    float: left;
+    width: 650px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main-title{
+    float: left;
+    min-width: 91px;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.footer-main-text{
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-size: 12px;
+    line-height: 16px;
+    list-style: none;
+    display: inline;
+}
+
+.footer-main-text a{
+    text-decoration: none;
+    color: #888;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.footer-bar{
+    display: inline-block;
+    margin-right: 14px;
+    width: 1px;
+    height: 11px;
+    background: #e8e9ec;
+    vertical-align: -2px;
+}
+
+.ul-style li:nth-child(2){
+    margin-left: 9px;
+}
 #company{
     height: 132px;
     border-top: 1px solid #f1f3f6;
