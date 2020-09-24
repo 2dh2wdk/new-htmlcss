@@ -1367,8 +1367,8 @@ main{
 }
 
 #main-secondad img{
-    width: 331px;
-    height: 147px;
+    width: 330px;
+    height: 148px;
     border: 0;
 }
 
@@ -1617,6 +1617,7 @@ main{
 #notice{
     position: relative;
     border-bottom: 1px solid #f1f3f6;
+    min-width: 1130px;
 }
 
 #notice-area{
@@ -1672,6 +1673,8 @@ main{
     top: 23px;
     left: 0;
     display: inline-block;
+    width: 741px;
+    float: left;
 }
 
 .ul-style{
@@ -1699,6 +1702,10 @@ main{
     line-height: 16px;
     list-style: none;
     display: inline;
+    margin: 1px 0 0 14px;
+}
+.ul-style li:first-child{
+    margin-left:0;
 }
 
 .footer-main-text a{
@@ -1731,9 +1738,169 @@ main{
     padding-top: 0;
 }
 
+#footer-main-right{
+    position: relative;
+    left: 1px;
+    display: inline;
+    left: -40px;
+}
+
+#project-area{
+    position: relative;
+    float: right;
+    margin-top: 25px;
+    padding-left: 23px;
+    height: 50px;
+    border-left: 1px solid #f1f3f6;
+}
+
+#project-text{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#project-text h3{
+    margin-top: -1px;
+    color: #444;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 17px;  
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    margin: 0;
+}
+
+#project-text a{
+    display: inline-block;
+    margin-top: 4px;
+    color: #888;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    text-decoration: none;
+}
+
+#project-img{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#project-img a{
+    display: block;
+    width: 47px;
+    height: 50px;
+    background-position: -143px 0;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+}
+
+#whale-area{
+    position: relative;
+    float: right;
+    margin-top: 25px;
+    padding-right: 24px;
+    padding-left: 23px;
+    height: 50px;
+    border-left: 1px solid #f1f3f6;
+}
+
+#whale-text{
+    float: left;
+    vertical-align: top;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#whale-text h3{
+    margin: 0;
+    margin-top: -1px;
+    color: #444;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 17px;
+
+}
+
+#whale-text a{
+    display: inline-block;
+    margin-top: 4px;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+#whale-img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-position: 0 -60px;
+    float: left;
+    vertical-align: top;
+}
+
+#whale-img a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-position: 0 -60px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_main.png);
+    background-repeat: no-repeat;
+}
+
 #company{
     height: 132px;
     border-top: 1px solid #f1f3f6;
+}
+
+#company-area{
+    position: relative;
+    padding-top: 24px;
+    width: 1130px;
+    height: 132px;
+}
+
+#company ul{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 14px;
+    float: left;
+}
+
+#company ul li{
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: -1px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 14px;
+    float: left;
+}
+
+#company ul li:first-child{
+    margin-left: 0;
+}
+
+#company ul li a{
+    text-decoration: none;
+    color: #888;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#company-end{
+    display: inline-block;
+    font-weight: bold;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    float: left;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#company-end a{
+    text-decoration: none;
+    color: #444;
 }
 
 /* 마진상쇄 없애는법
